@@ -1,0 +1,827 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 430vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 125px;
+}
+.header .data {
+  width: 100%;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.header .data .menu {
+  width: 595px;
+  height: 15px;
+  display: flex;
+  list-style: none;
+  flex-grow: 0.3;
+  justify-content: space-between;
+}
+.header .data .menu a {
+  text-decoration: none;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+}
+.header .data .adressnum {
+  width: 405px;
+  height: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .data .adressnum span {
+  height: 15px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+}
+.header .data .adressnum .contact {
+  width: 209px;
+}
+.header .data .adressnum .contact2 {
+  width: 146px;
+}
+.header .data .iconnav {
+  width: 173px;
+  height: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+.header .data .iconnav .svg {
+  width: 32px;
+  height: 32px;
+}
+.header .search {
+  width: 100%;
+  height: 70px;
+  background: #F2F2F2;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .search .logo {
+  width: 142px;
+  height: 44px;
+}
+.header .search .cataloguebutton {
+  width: 153px;
+  height: 50px;
+  background: #F7AC3B;
+  border-radius: 5px;
+  border: none;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  color: #FFFFFF;
+}
+.header .search p {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+}
+.header .search input {
+  width: 715px;
+  height: 50px;
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: none;
+  padding-left: 20px;
+}
+.header .search input::-moz-placeholder {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+}
+.header .search input::placeholder {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+}
+
+.betweenheader {
+  width: 100%;
+  height: 15px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: #000000;
+}
+
+main {
+  width: 100%;
+  height: 911px;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .mainheader {
+  width: 588px;
+  height: 23px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 23px;
+  color: #000000;
+}
+main .wrapper {
+  width: 100%;
+  height: 550px;
+  display: flex;
+  justify-content: space-between;
+}
+main .wrapper .imgcontainer {
+  width: 860px;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .wrapper .imgcontainer .imgs {
+  width: 100px;
+  height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .wrapper .imgcontainer .imgs .littleimg {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  background: url(/img/mainparquet.png);
+}
+main .wrapper .imgcontainer .mainimg {
+  width: 750px;
+  height: 550px;
+  border-radius: 5px;
+  background: url(/img/mainparquet.png);
+}
+main .wrapper .buy {
+  width: 421px;
+  height: 550px;
+  background: #FFFFFF;
+  border: 2px solid #F2F2F2;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+main .wrapper .buy .buyheader {
+  width: 80px;
+  height: 15px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #747474;
+}
+main .wrapper .buy .measure {
+  width: 269.5px;
+  height: 45px;
+  display: flex;
+  justify-content: space-between;
+}
+main .wrapper .buy .measure p {
+  height: 45px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+}
+main .wrapper .buy .measure p span {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 13px;
+  text-align: center;
+}
+main .wrapper .buy .measure img {
+  width: 16px;
+  height: 16px;
+  position: relative;
+  top: 5px;
+}
+main .wrapper .buy .line {
+  width: 381px;
+  border: 2px solid #F2F2F2;
+}
+main .wrapper .buy .categ {
+  width: 310px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .wrapper .buy .categ p {
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #747474;
+}
+main .wrapper .buy .categ p span {
+  width: 130px;
+  height: 15px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: right;
+  color: #000000;
+}
+main .wrapper .buy .number {
+  width: 380px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .wrapper .buy .number .inputwrapper {
+  width: 240px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 2px solid #F2F2F2;
+  border-radius: 5px;
+}
+main .wrapper .buy .number .inputwrapper #decrement {
+  width: 40px;
+  height: 60px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 15px;
+  color: #000000;
+}
+main .wrapper .buy .number .inputwrapper #increment {
+  width: 40px;
+  height: 60px;
+  background: transparent;
+  cursor: pointer;
+  border: none;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 15px;
+  color: #000;
+}
+main .wrapper .buy .number .inputwrapper input[type=number] {
+  width: 120px;
+  height: 60px;
+  border: none;
+  padding-left: 50px;
+  padding-top: 10px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 15px;
+  color: #000;
+  outline: none;
+}
+main .wrapper .buy .number .m2 {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #F7AC3B;
+  border-radius: 5px;
+}
+main .wrapper .buy .number .şt {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  text-align: center;
+  color: #000000;
+  background: #F2F2F2;
+  border-radius: 5px;
+}
+main .wrapper .buy .buyheader2 {
+  width: 200px;
+  height: 34px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 34px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  outline: none;
+}
+main .wrapper .buy .buybut {
+  width: 380px;
+  height: 60px;
+  border: none;
+  background: #F7AC3B;
+  border-radius: 5px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  text-align: center;
+  color: #FFFFFF;
+}
+main .wrapper .buy .buycont {
+  width: 380px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+main .wrapper .buy .buycont .heartcont {
+  width: 185px;
+  height: 60px;
+  background: #F2F2F2;
+  border-radius: 5px;
+  border: none;
+}
+main .wrapper .buy .buycont .graphcont {
+  width: 185px;
+  height: 60px;
+  background: #F2F2F2;
+  border-radius: 5px;
+  border: none;
+}
+main .infoheader {
+  width: 205px;
+  height: 23px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  color: #000000;
+}
+main .infowrapper {
+  width: 1195px;
+  height: 225px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+main .infowrapper ul {
+  list-style: none;
+}
+main .infowrapper ul li {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #747474;
+}
+main .infowrapper ul li span {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+}
+main .infowrapper .info1 {
+  width: 402px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .infowrapper .subheader {
+  width: 180px;
+  height: 15px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+}
+main .infowrapper .listinfo1 {
+  width: 402px;
+  height: 195px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .infowrapper .listinfo1 li {
+  width: 402px;
+  height: 15px;
+}
+main .infowrapper .listinfo1 li span {
+  width: 182px;
+  height: 15px;
+}
+main .infowrapper .info2 {
+  width: 248px;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .infowrapper .info2 .listinfo2 {
+  width: 248px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .infowrapper .info2 .listinfo2 li {
+  width: 248px;
+  height: 15px;
+}
+main .infowrapper .info2 .listinfo2 li span {
+  width: 28px;
+  height: 15px;
+}
+main .infowrapper .info3 {
+  width: 315px;
+  height: 105px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .infowrapper .info3 .listinfo3 {
+  width: 315px;
+  height: 75px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+main .infowrapper .info3 .listinfo3 li {
+  width: 313px;
+  height: 15px;
+}
+main .infowrapper .info3 .listinfo3 li span {
+  width: 35px;
+  height: 15px;
+}
+
+.sec1, .sec4 {
+  width: 100%;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.sec1 .sec1header, .sec4 .sec1header {
+  width: 310px;
+  height: 23px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  color: #000000;
+}
+.sec1 .cards, .sec4 .cards {
+  display: flex;
+  justify-content: space-between;
+}
+.sec1 .cards .c, .sec4 .cards .c {
+  width: 310px;
+  height: 457px;
+  border: 2px solid #F2F2F2;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec1 .cards .c .bigimg, .sec4 .cards .c .bigimg {
+  width: 310px;
+  height: 230px;
+  padding-left: 250px;
+  padding-top: 170px;
+}
+.sec1 .cards .c .bigimg .aqua, .sec4 .cards .c .bigimg .aqua {
+  width: 50px;
+  height: 50px;
+}
+.sec1 .cards .c .csubheader, .sec4 .cards .c .csubheader {
+  width: 270px;
+  height: 44px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #000000;
+}
+.sec1 .cards .c .cardlist, .sec4 .cards .c .cardlist {
+  list-style: none;
+  width: 270px;
+  height: 65px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sec1 .cards .c .cardlist li, .sec4 .cards .c .cardlist li {
+  width: 120px;
+  height: 15px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  color: #747474;
+}
+.sec1 .cards .c .cardlist li span, .sec4 .cards .c .cardlist li span {
+  width: 46px;
+  height: 15px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 15px;
+  color: #000000;
+}
+.sec1 .cards .c .cardfooter, .sec4 .cards .c .cardfooter {
+  width: 270px;
+  height: 53px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.sec1 .cards .c .cardfooter p, .sec4 .cards .c .cardfooter p {
+  width: 130px;
+  height: 34px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 140%;
+  color: #000000;
+  flex-grow: 0.7;
+}
+.sec1 .cards .card1 .bigimg, .sec4 .cards .card1 .bigimg {
+  background: url(/img/parquet5.png);
+}
+.sec1 .cards .card2 .bigimg, .sec4 .cards .card2 .bigimg {
+  background: url(/img/parquet2.png);
+}
+.sec1 .cards .card3 .bigimg, .sec4 .cards .card3 .bigimg {
+  background: url(/img/parquet3.png);
+}
+.sec1 .cards .card4 .bigimg, .sec4 .cards .card4 .bigimg {
+  background: url(/img/parquet4.png);
+}
+
+.sec2 {
+  width: 100%;
+  height: 443px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+.sec2 .sec2header {
+  width: 117px;
+  height: 23px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  color: #000000;
+}
+.sec2 .map {
+  width: 640px;
+  height: 400px;
+  border-radius: 5px;
+}
+.sec2 .map .iframemap {
+  background: url(/img/map.png);
+  border-radius: 20px;
+}
+.sec2 .cargowrapper {
+  width: 1300px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.sec2 .cargowrapper .cargo {
+  width: 640px;
+  height: 291px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sec2 .cargowrapper .cargo .cargoline {
+  width: 640px;
+  height: 0px;
+  border: 2px solid #F2F2F2;
+}
+.sec2 .cargowrapper .cargo p {
+  width: 640px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #747474;
+  display: flex;
+  justify-content: space-between;
+}
+.sec2 .cargowrapper .cargo p span {
+  width: 310px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+}
+.sec2 .cargowrapper .cargo .cargoparag {
+  width: 640px;
+  height: 51px;
+  display: flex;
+}
+.sec2 .cargowrapper .cargo .cargoparag .cargoparagspan {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 15px;
+  color: #747474;
+}
+
+.sec3 {
+  width: 100%;
+  height: 1051px;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.sec3 .sec3header {
+  width: 304px;
+  height: 23px;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 23px;
+  color: #000000;
+}
+.sec3 .leftrightwrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.sec3 .leftrightwrapper .left {
+  height: 890px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer {
+  width: 100%;
+  height: 206px;
+  background: #F2F2F2;
+  padding-left: 15%;
+  padding-right: 15%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer ul {
+  height: 80px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 15px;
+  color: #000000;
+}
+.footer h1 {
+  font-family: "Gotham Pro";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 19px;
+  color: #000000;
+}
+.footer div {
+  height: 126px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .ffirstwrapper {
+  width: 174px;
+  height: 126px;
+}
+.footer .ffirstwrapper .footerlogo {
+  width: 142px;
+  height: 43px;
+}
+.footer .ffirstwrapper .iconcont {
+  width: 174px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+}
+.footer .fsecondwrapper .location {
+  width: 229px;
+}
+.footer .fsecondwrapper .phone {
+  width: 164px;
+}
+.footer .fsecondwrapper .mail {
+  width: 165px;
+}/*# sourceMappingURL=main.css.map */
